@@ -2043,8 +2043,31 @@ I create polished, modern WordPress websites with Elementor—balanced layouts, 
         },
         retina_detect: true,
       });
+      document.addEventListener('DOMContentLoaded', function() {
+    // اگر یوزر نے پہلے سے انتخاب نہ کیا ہو تو ڈیفالٹ ڈارک لگائیں
+    if (!localStorage.getItem('theme')) {
+        document.body.classList.add('dark');
+    } else {
+        // پہلے سے منتخب تھیم ہو تو اسے اپلائی کریں
+        document.body.classList.add(localStorage.getItem('theme'));
+    }
+
+    // مثال کے طور پر سوئچ بٹن کا فنکشن
+    const toggleBtn = document.getElementById('theme-toggle');
+    toggleBtn.addEventListener('click', function() {
+        if (document.body.classList.contains('dark')) {
+            document.body.classList.replace('dark', 'light');
+            localStorage.setItem('theme', 'light');
+        } else {
+            document.body.classList.replace('light', 'dark');
+            localStorage.setItem('theme', 'dark');
+        }
+    });
+});
+
     </script>
   </body>
 </html>
+
 
 
