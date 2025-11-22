@@ -86,7 +86,8 @@
         background: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        border: 1px solid var(--secondary);
+        /* border: 1px solid rgba(255, 255, 255, 0.2); */
       }
 
       .dark .glass-card {
@@ -396,6 +397,7 @@
         </div>
       </div>
     </header>
+    
 
     <!-- Hero Section -->
     <section
@@ -614,7 +616,94 @@ I create polished, modern WordPress websites with Elementor—balanced layouts, 
     </div>
 
     <!-- Projects Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 projects-container">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 projects-container">
+          <!-- Project 1 later add -->
+          <div
+            class="project-card rounded-xl overflow-hidden shadow-lg relative border-2 border-secondary"
+            data-category="web"
+          >
+            <img
+              src="skillventure.jpg"
+              alt="Project 1"
+              class="w-full h-64 object-cover"
+            />
+            <div
+              class="project-overlay absolute inset-0 bg-secondary/90 flex flex-col items-center justify-center p-6 text-white opacity-0"
+            >
+              <h3 class="text-xl font-bold mb-2">SkillVenture Website</h3>
+              <p class="text-center mb-4">
+                A fully functional learning platform with seamless course delivery and secure payment integration.
+              </p>
+              <div class="flex space-x-2">
+                <span class="px-3 py-1 bg-white/20 rounded-full text-sm"
+                  >Elementor</span
+                >
+                <span class="px-3 py-1 bg-white/20 rounded-full text-sm"
+                  >Custom CSS</span
+                >
+                <span class="px-3 py-1 bg-white/20 rounded-full text-sm"
+                  >Web Design</span
+                >
+              </div>
+              <div class="mt-4 flex space-x-3">
+                <a
+                  href="http://skillventure.rf.gd/"
+                  class="px-4 py-2 bg-white text-secondary rounded-full font-medium hover:bg-white/90"
+                  target="_blank"
+                  >View Project</a
+                >
+                <!-- <a
+                  href="#"
+                  class="px-4 py-2 border border-white rounded-full font-medium hover:bg-white/10"
+                  >Details</a
+                > -->
+              </div>
+            </div>
+          </div>
+          <!-- Project 2 later add -->
+          <div
+            class="project-card rounded-xl overflow-hidden shadow-lg relative border-2 border-secondary"
+            data-category="web"
+          >
+            <img
+              src="startfitter.jpg"
+              alt="Project 1"
+              class="w-full h-64 object-cover"
+            />
+            <div
+              class="project-overlay absolute inset-0 bg-secondary/90 flex flex-col items-center justify-center p-6 text-white opacity-0"
+            >
+              <h3 class="text-xl font-bold mb-2">E-Commerce Website</h3>
+              <p class="text-center mb-4">
+                A fully functional e-commerce platform with payment integration
+                and inventory management.
+              </p>
+              <div class="flex space-x-2">
+                <span class="px-3 py-1 bg-white/20 rounded-full text-sm"
+                  >Elementor</span
+                >
+                <span class="px-3 py-1 bg-white/20 rounded-full text-sm"
+                  >Custom CSS</span
+                >
+                <span class="px-3 py-1 bg-white/20 rounded-full text-sm"
+                  >Web Design</span
+                >
+              </div>
+              <div class="mt-4 flex space-x-3">
+                <a
+                  href="http://startfitter.gt.tc/"
+                  class="px-4 py-2 bg-white text-secondary rounded-full font-medium hover:bg-white/90"
+                  target="_blank"
+                  >View Project</a
+                >
+                <!-- <a
+                  href="#"
+                  class="px-4 py-2 border border-white rounded-full font-medium hover:bg-white/10"
+                  >Details</a
+                > -->
+              </div>
+            </div>
+          </div>
           <!-- Project 1 -->
           <div
             class="project-card rounded-xl overflow-hidden shadow-lg relative border-2 border-secondary"
@@ -805,13 +894,13 @@ I create polished, modern WordPress websites with Elementor—balanced layouts, 
               </p>
               <div class="flex space-x-2">
                 <span class="px-3 py-1 bg-white/20 rounded-full text-sm"
-                  >HTML5</span
+                  >WordPress</span
                 >
                 <span class="px-3 py-1 bg-white/20 rounded-full text-sm"
-                  >Tailwaind CSS</span
+                  >Elementor</span
                 >
                 <span class="px-3 py-1 bg-white/20 rounded-full text-sm"
-                  >JavaScript</span
+                  >Designing</span
                 >
               </div>
               <div class="mt-4 flex space-x-3">
@@ -850,13 +939,13 @@ I create polished, modern WordPress websites with Elementor—balanced layouts, 
               </p>
               <div class="flex space-x-2">
                 <span class="px-3 py-1 bg-white/20 rounded-full text-sm"
-                  >HTML5</span
+                  >Elementor</span
                 >
                 <span class="px-3 py-1 bg-white/20 rounded-full text-sm"
-                  >Tailwaind CSS</span
+                  >Custom CSS</span
                 >
                 <span class="px-3 py-1 bg-white/20 rounded-full text-sm"
-                  >JavaScript</span
+                  >Web Design</span
                 >
               </div>
               <div class="mt-4 flex space-x-3">
