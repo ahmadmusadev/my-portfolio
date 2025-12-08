@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Received - Thank You!</title>
+
+    <style>
+        /* CSS3 Styling for perfect centering and clean look */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6; /* Light background */
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            min-height: 100vh; /* Full viewport height */
+            text-align: center;
+            color: #333;
+        }
+
+        /* Success Card Styling */
+        .success-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 450px;
+            width: 100%;
+            border-top: 5px solid #4CAF50; /* Green top border */
+            animation: fadeIn 1s ease-out;
+        }
+
+        /* Heading Style */
+        h1 {
+            color: #4CAF50;
+            font-size: 28px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        /* Paragraph Style */
+        p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* Button Style */
+        .home-button {
+            display: inline-block;
+            background-color: #007BFF;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .home-button:hover {
+            background-color: #0056b3;
+        }
+        
+        /* CSS3 Keyframes Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="success-card">
+        
+        <svg style="color: #4CAF50; margin-bottom: 20px;" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-check-circle-fill mx-auto" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022l-3.477 4.296-1.554-1.554a.75.75 0 1 0-1.06 1.06l2.074 2.073a.75.75 0 0 0 1.072-.033l4.04-4.992a.75.75 0 0 0-.019-1.05z"/>
+        </svg>
+
+        <h1>Message Sent Successfully!</h1>
+        
+        <p>
+            Thank you for reaching out! Your message has been received. As a WordPress Developer and Elementor Designer, I will review your project and get back to you shortly.
+        </p>
+        
+        <a href="./index.html" class="home-button">
+            Go back to Homepage
+        </a>
+        
+    </div>
+
+</body>
+</html>
